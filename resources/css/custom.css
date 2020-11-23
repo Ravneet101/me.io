@@ -1,0 +1,221 @@
+html, body {
+  font-family: monospace;
+  letter-spacing: 0.098rem;
+  line-height: 1.86;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  text-transform: lowercase;
+}
+.text-upcase {
+  text-transform: uppercase;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* large diveces */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  html, body {
+    text-align: justify;
+  }
+  .pull-up {
+    margin-top: -38px;
+  }
+}
+/* large diveces retina display */
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  html, body {
+    text-align: justify;
+  }
+  .pull-up {
+    margin-top: -38px;
+  }
+}
+
+/* small diveces including landscape modes */
+@media (max-width:320px) {
+  .sm-device-mar-top {
+    margin-top: 25px;
+  }
+  .welcome-note {
+    display: none;
+  }
+}
+@media (max-width:480px) {
+  .sm-device-mar-top {
+    margin-top: 25px;
+  }
+  .welcome-note-container img {
+    width: 250px !important;
+  }
+}
+@media (max-width:600px) {
+  .sm-device-mar-top {
+    margin-top: 25px;
+  }
+  .welcome-note-container img {
+    width: 250px !important;
+  }
+}
+@media (max-width:801px) {
+  .sm-device-mar-top {
+    margin-top: 25px;
+  }
+  .welcome-note-container img {
+    width: 250px !important;
+  }
+  .portfolio-main-content {
+    margin-top: 12% !important;
+  }
+}
+a {
+  color: #1f1a1a;
+  text-decoration: none;
+}
+ul {
+  list-style: circle;
+}
+strong, b {
+  color: #6f91f2;
+  font-weight: 800;
+}
+
+.portfolio-main-content {
+  margin-top: 1.5%;
+}
+.info-title {
+  animation: MoveUpDown 2s linear infinite;
+}
+.container-portfolio {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top: 25px;
+  bottom: 25px;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.welcome-note-container {
+  padding-top: 180px;
+}
+.welcome-note-container img {
+  margin-top: 40px;
+  width: 500px;
+  border-radius: 10px;
+  position: relative;
+  animation: MoveUpDown 2s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+.welcome-note {
+  display: flex;
+  justify-content: center;
+}
+.typewriter h1 {
+  overflow: hidden;
+  font-size: 36px;
+  border-right: 4px solid;
+  white-space: nowrap;
+  word-wrap: break-word;
+  margin: 0 auto;
+  animation: typing 2.4s steps(40, end), blink-caret .24s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: inherit; }
+}
+.day-time .container-portfolio {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+.night-time .container-portfolio {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.portfolio-title {
+  text-align: center;
+}
+.lead-lg {
+  font-size: 4.56rem;
+}
+.lead {
+  font-size: 1.46rem;
+}
+.lead-lg, .lead {
+  letter-spacing: 0.28rem;
+}
+.img-thumbnail {
+  position: relative;
+  border: none;
+  border-radius: 100%;
+  height: 200px;
+  padding: 0px;
+  background-color: transparent;
+  animation: MoveUpDown 2s linear infinite;
+}
+.title {
+  font-size: 1.56rem;
+  color: #1f1a1a;
+}
+.tile-info-wrapper {
+  display: none;
+}
+.title-info {
+  font-size: 1.26rem;
+}
+.toggable-title:after {
+  content: "[+]";
+  margin-left: 8px;
+}
+li {
+  margin-bottom: 6px;
+}
+.toggable-title.active:after {
+  content: "[-]";
+}
+.info-separator {
+  margin: 30px 0 30px 0;
+}
+a {
+  transition: 120ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 120ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+a:hover {
+  color: #4286f4;
+  text-decoration: none;
+}
+.find-me-on {
+  text-align: center;
+}
+.social-media-icon {
+  margin: 0px 8px;
+}
+.social-media-icon svg {
+  height: 26px;
+  transition: 120ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 120ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+.social-media-icon svg:hover {
+  fill: #4286f4;
+}
+
+.skip-to-main-content > p {
+  cursor: pointer;
+}

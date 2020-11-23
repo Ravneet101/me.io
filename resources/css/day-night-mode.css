@@ -1,0 +1,44 @@
+.day-night-mode-toggle {
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  right: 40px;
+}
+.day-night-mode-toggle {
+  cursor: pointer;
+}
+
+/* day mode text colors */
+.day-time {
+  background-color: #f4f4f4;
+  color: #585858;
+}
+.day-time .day-night-mode-toggle {
+  color: #585858;
+}
+/* day mode text colors */
+
+
+/* night mode text colors */
+.night-time {
+  background-color: #0f0f0f;
+  color: #f4f4f4;
+}
+.night-time a {
+  color: #BFEBFF;
+}
+.night-time a:hover {
+  color: #6f91f2;
+}
+.night-time .img-thumbnail {
+  /* border: 1px solid; */
+  background-color: #f4f4f4;
+  padding: 0px 16px;
+}
+.night-time .day-night-mode-toggle {
+  color: #BFEBFF;
+}
+.night-time .title {
+  color: #f4f4f4;
+}
+/* night mode text colors */
